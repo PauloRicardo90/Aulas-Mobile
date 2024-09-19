@@ -1,0 +1,66 @@
+Delivery de Comida Caseira(exercicio extra)Acrescentar entrega, consumir api de cep para preencher endereco Desafio Mudar para Aluguel de Ferramentas.
+<title>Aplicativo de Delivery de Comida Caseira</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<h1>Delivery de Comida Caseira</h1>
+</header>
+<main>
+<section id="menu">
+<h2>Menu</h2>
+<ul id="dish-list">
+<!--Lista de pratos será inserida aqui -->
+</u|>
+</section>
+
+<h2>Carr∈ho<M2>
+
+<!--Itens do carrinho serão inseridos aqui -->
+</uI>
+
+</section>
+</main>
+
+</body>
+</html>
+// Dados de exemplo dos pratos
+const dishes=[
+{ id: 1, name: "Feijoada", price: 25.00},
+{ id: 2, name: "Lasanha", price:30.00},
+{id:3, name: "Strogonoff', price: 27.00}];
+//Elementos do DOM
+const dishList=document.getElementById('dish-list');
+const cartList = document.getElementById('cart-list');
+const totalElement=document.getElementById('total');
+letcart=L];
+lettotal=0;
+//Função para atualizar a lista de pratos
+function updateDishList(){
+dishList.innerHTML=";
+dishes.forEach(dish=>{
+const li=document.createElement('li');
+li.innerHTML = `${dish.name}-R$${dish.price.toFixed(2)}
+<button onclick="addToCart(${dish.id})">Adicionar ao Carrinho</buatton>;
+dishList.appendChild(li);
+});
+}
+// Funcão para adicionar um prato ao carrinho
+function addToCart(dishId){
+constdish=dishes,f∈d(d⇒d,id===dishId);
+if(dish){
+cart.push(dish);
+total+=dish.price;
+updateCart();
+}
+// Funcão para atualizar a lista do carrinho
+function updateCart(){
+cartList.innerHTML=";
+cart.forEach((dish,index)=>{
+const li=document.createElement('li');
+li.textContent=`'${dish.name}-R$${dish.price.toFixed(2)};
+cartList.appendChild(li);
+});
+totalElement.textContent=`Total: R$${total.toFixed(2)};}
+// Inicializa a lista de pratos
+updateDishList();

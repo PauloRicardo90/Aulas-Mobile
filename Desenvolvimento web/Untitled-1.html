@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Esporte</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Notícias Esportivas</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Início</a></li>
+            <li><a href="#futebol">Futebol</a></li>
+            <li><a href="#basquete">Basquete</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="home">
+            <h2>Últimas Notícias</h2>
+            <p>Fique por dentro das últimas novidades do mundo dos esportes. Cobertura completa de futebol, basquete e muito mais.</p>
+        </section>
+
+        <section id="futebol">
+            <h2>Futebol</h2>
+            <article>
+                <h3>Final do Campeonato</h3>
+                <p>O time X venceu a final do campeonato com um placar de 3 a 2. Foi uma partida emocionante!</p>
+            </article>
+            <article>
+                <h3>Transferências Recentes</h3>
+                <p>Grandes jogadores foram transferidos nesta temporada. Confira as principais movimentações do mercado.</p>
+            </article>
+        </section>
+
+        <section id="basquete">
+            <h2>Basquete</h2>
+            <article>
+                <h3>NBA: Temporada 2024</h3>
+                <p>A nova temporada da NBA está a todo vapor. Veja como estão os desempenhos das equipes até agora.</p>
+            </article>
+            <article>
+                <h3>Jogadores em Destaque</h3>
+                <p>Os jogadores que estão se destacando nesta temporada e os que podem fazer a diferença nos próximos jogos.</p>
+            </article>
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Para mais informações ou para enviar sugestões, entre em contato pelo e-mail <a href="mailto:esporte@site.com">esporte@site.com</a>.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Notícias Esportivas. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
